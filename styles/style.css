@@ -2,25 +2,14 @@
 @import "whatsapp.css";
 
 @media only screen and (min-width: 1010px) {
-  .servicios2 {
-    display: none;
-  }
-  .servicios1 {
-    display: block;
-  }
   body {
-    margin: 0 100px;
+    width: 85%;
+    margin: auto;
   }
  }
 @media only screen and (max-width: 1010px) {
-  .h1 {
+  .h1, .sticky-navbar  {
      display: none;
-  }
-  .servicios2 {
-    display: block;
-  }
-  .servicios1 {
-    display: none;
   }
   .productos p {
     font-size: 15px;
@@ -104,26 +93,45 @@
   
 }
 
-.serv1txt {
-  padding: 5px 10px;
+/*navbar*/
+.sticky-navbar {
+  width: 85%;
+  height: 35px;
+  position: fixed;
+  z-index: 100;
   background-color: rgba(31, 31, 31, 0.479);
+  text-align: center;
+}
+	
+nav ul {
+  overflow: hidden;
+  display: inline-block;
+}
+ 
+nav ul li {
+  float: left;
+  font-size: 16px;
+}
+ 
+nav ul li a {
+  display: block;
+  margin: 0 5px;
+  padding: 5px ;
+  color: rgba(194, 194, 194, 0.877);
+  text-shadow: 5px 2px 5px rgb(56, 56, 56);
+}
+ 
+nav ul li:hover {
+  background: rgba(208, 218, 228, 0.877);
 }
 
 /*Quienes Somos*/
-.historia .servicios2 {
-    padding: 10px 40px;
-}
 
 /*Productos*/
-.productos .product {
+.product {
   font-size: 25px;
   font-weight: bold;
   color:rgb(59, 58, 58);
-  text-shadow: 4px 2px 5px white;
-}
-
-h2 {
-  color: rgb(80, 80, 80);
   text-shadow: 4px 2px 5px white;
 }
 
